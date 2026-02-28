@@ -1,42 +1,59 @@
 import React from 'react'
-import SpaceNavbar from './Components/Navbar'
-import SpaceHero from './Components/Hero'
-import SpaceFooter from './Components/Footer'
-import SpaceFeatures from './Components/Features'
-import PlanetsSection from './Components/Planets'
-import SpaceGallery from './Components/Gallery'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
-function App() {
+import SpaceNavbar  from './Components/Navbar'
+import SpaceFeatures from './Components/Features'
+import SpaceFooter  from './Components/Footer'
+import HomePage from './Components/Pages/Home'
+import MissionSection from './Components/Pages/Mission'
+import GalleryPage from './Components/GaleryPage'
+import ExploreSection from './Components/Pages/Explore'
+import PlanetsSection from './Components/Planets'
+
+/* ── Pages ── */
+
+
+/* Scroll to top on every route change */
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [pathname])
+  return null
+}
+
+function AppLayout() {
   return (
     <div>
-
-      <SpaceNavbar/>
-
-      {/* Home */}
-      <div id="home">
-        <SpaceHero/>
-      </div>
-
-      {/* Missions */}
-      <div id="missions">
-        <SpaceFeatures/>
-      </div>
-      <SpaceGallery/>
-
-      {/* Planets */}
-      <div id="planets">
-        <PlanetsSection/>
-      </div>
+      <SpaceNavbar />
+      <ScrollToTop />
 
       
 
-      {/* Contact */}
-      <div id="contact">
-        <SpaceFooter/>
-      </div>
-
+       
+      <Routes>
+        <Route path="/"         element={ <>
+    <HomePage/>
+    <SpaceFeatures/>
+  </>}  
+       
+           />
+        
+        <Route path="/missions" element={<MissionSection/>} />
+        <Route path="/gallery"  element={<GalleryPage/>}  />
+        <Route path="/explore"  element={<ExploreSection/>}  />
+        <Route path="/planets"  element={<PlanetsSection/>}  />
+      </Routes>
+      <SpaceFooter />
     </div>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppLayout />
+    </BrowserRouter>
+  )
+}
