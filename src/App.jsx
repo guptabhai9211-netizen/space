@@ -3,13 +3,16 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 
 import SpaceNavbar  from './Components/Navbar'
-import SpaceFeatures from './Components/Features'
 import SpaceFooter  from './Components/Footer'
 import HomePage from './Components/Pages/Home'
 import MissionSection from './Components/Pages/Mission'
 import GalleryPage from './Components/GaleryPage'
 import ExploreSection from './Components/Pages/Explore'
 import PlanetsSection from './Components/Planets'
+import SpaceGalaxy from './Components/Pages/SpaceGlaxy'
+import SolarSystem from './Components/Solar-system'
+import FutureTech from './Components/Pages/Section1'
+import FunFactsSection from './Components/SpaceAgencies'
 
 /* ── Pages ── */
 
@@ -35,7 +38,11 @@ function AppLayout() {
       <Routes>
         <Route path="/"         element={ <>
     <HomePage/>
-    <SpaceFeatures/>
+    
+    <SpaceGalaxy/>
+    <SolarSystem/>
+    <FutureTech/>
+    <FunFactsSection/>
   </>}  
        
            />

@@ -7,44 +7,44 @@ import {
 /* ── Gallery data ─────────────────────────────────────────── */
 const GALLERY = [
   {
-    url: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=900&q=85",
-    title: "Deep Space Void",
-    sub: "13.8 billion light-years",
+    url: "https://blogcdn.aakash.ac.in/wordpress_media/2024/08/A.P.J.-Abdul-Kalam.jpg",
+    title: "A.P.J.-Abdul-Kalam",
+    sub: "Scientist and former President of India",
     size: "large",   // spans 2 rows
     color: "#7c3aed",
   },
   {
-    url: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900&q=85",
-    title: "Andromeda Galaxy",
-    sub: "2.537M light-years away",
+    url: "https://www.indiastrategic.in/wp-content/uploads/2024/08/LR_Remembering-Vikram-Sarabhai.jpg",
+    title: "Dr. Vikram Sarabhai",
+    sub: "The Father of the Indian Space Programme",
     size: "normal",
     color: "#4f46e5",
   },
   {
-    url: "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=900&q=85",
-    title: "Solar Flare",
-    sub: "Plasma eruption, 10,000 km",
+    url: "https://speak2world.wordpress.com/wp-content/uploads/2014/10/homi.jpg",
+    title: "Dr.Homi Bhabha",
+    sub: " The father of the Indian nuclear programme",
     size: "normal",
     color: "#f97316",
   },
   {
-    url: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=900&q=85",
-    title: "Nebula Birth",
-    sub: "Star forming region",
+    url: "https://avatars.sched.co/2/c0/19021062/avatar.jpg?1d8",
+    title: "Nandini Harinath",
+    sub: "Nandini Harinath is a scientist at ISRO's",
     size: "normal",
     color: "#db2777",
   },
   {
-    url: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=900&q=85",
-    title: "Saturn Rings",
-    sub: "1.2 billion km from Earth",
+    url: "https://blackhattalent.com/wp-content/uploads/w3-webp/uploads/2023/08/Anuradha-TK.jpg-595xh.webp",
+    title: "Anuradha TK",
+    sub: "Retired Indian scientist and former director of the  Satellite Centre",
     size: "large",
     color: "#0ea5e9",
   },
   {
-    url: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=900&q=85",
-    title: "Lunar Surface",
-    sub: "384,400 km from home",
+    url: "https://cimg.acharyaprashant.org/images/img-5db4f63f-0451-4103-bdd9-7a0efef31c08/30/image.jpg",
+    title: "Jagadish Chandra Bose",
+    sub: "Pioneering Indian polymath, physicist, and botanist ",
     size: "normal",
     color: "#a78bfa",
   },
@@ -582,11 +582,11 @@ export default function SpaceGallery() {
               COSMIC IMAGERY
             </div>
             <h2 className="sg-title">
-              Space <span className="acc">Gallery</span>
+               Space <span className="acc">Scientist </span>
             </h2>
             <p className="sg-sub">
-              Stunning visuals from Hubble, JWST, and deep-space probes —
-              every pixel a billion light-years of history.
+             “Brilliant minds behind Hubble, JWST, and deep-space probes —
+              every discovery unlocking a billion light-years of cosmic history.”
             </p>
             <div className="sg-divider" />
           </motion.div>
