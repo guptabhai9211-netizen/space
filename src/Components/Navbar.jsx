@@ -324,7 +324,7 @@ export default function SpaceNavbar() {
 
             {/* Explore CTA */}
             <Link
-              to="/explore"
+              to="/Programs"
               className={`explore-btn ${exploreHover ? "is-hovered" : ""}`}
               onMouseEnter={() => setExploreHover(true)}
               onMouseLeave={() => setExploreHover(false)}
@@ -332,7 +332,7 @@ export default function SpaceNavbar() {
               <div className="explore-btn-glow" />
               <span className="explore-btn-text">
                 <span style={{ fontSize: "0.85rem" }}>✦</span>
-                Explore
+                Programes
               </span>
             </Link>
 
@@ -362,7 +362,7 @@ export default function SpaceNavbar() {
                 </Link>
               ))}
               <Link
-                to="/explore"
+                to="/Programs"
                 className={`mobile-explore ${mobileExploreHover ? "is-hovered" : ""}`}
                 onMouseEnter={() => setMobileExploreHover(true)}
                 onMouseLeave={() => setMobileExploreHover(false)}

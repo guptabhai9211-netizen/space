@@ -187,7 +187,7 @@ export default function FunFactsSection() {
       teaser: "One star holds almost everything.",
       reveal: "The Sun contains 99.86% of the entire Solar System's mass. All the planets, moons, asteroids, and comets combined account for just 0.14%.",
       accentColor: "#FFD166",
-      bgVideo: "https://www.w3schools.com/html/mov_bbb.mp4",
+      bgVideo: "spaace4.mp4",
       delay: 0,
     },
     {
@@ -196,7 +196,7 @@ export default function FunFactsSection() {
       teaser: "No one can hear you scream — literally.",
       reveal: "Space is an almost perfect vacuum. With no medium for sound waves to travel through, the universe is profoundly silent — no explosion, no rocket, nothing.",
       accentColor: "#8B5CF6",
-      bgVideo: "https://www.w3schools.com/html/mov_bbb.mp4",
+      bgVideo: "space2.mp4",
       delay: 0.1,
     },
     {
@@ -205,7 +205,7 @@ export default function FunFactsSection() {
       teaser: "It could swallow all the others.",
       reveal: "Jupiter is so massive that all the other planets in the Solar System could fit inside it — with room to spare. Over 1,300 Earths fit within its volume.",
       accentColor: "#EF476F",
-      bgVideo: "https://www.w3schools.com/html/mov_bbb.mp4",
+      bgVideo: "space3.mp4",
       delay: 0.2,
     },
   ];
@@ -628,7 +628,7 @@ export default function FunFactsSection() {
           >
             <video
               className="video-main"
-              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              src="space.mp4"
               autoPlay loop muted playsInline
             />
             <div className="video-overlay-content">
@@ -650,9 +650,9 @@ export default function FunFactsSection() {
             <h3 className="gallery-label">✦ The Universe in Images</h3>
             <div className="gallery-grid">
               {[
-                { src: "https://images.nasa.gov/image/hubble-ultra-deep-field/hubble-ultra-deep-field~orig.jpg", caption: "Hubble Ultra Deep Field", main: true },
+                { src: "https://i.ytimg.com/vi/Bf6A-FNW2xY/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGE8gTyhlMA8=&rs=AOn4CLAY4fH4TFUq1sWOHmMZyHdp4b-ehg", caption: "Hubble Ultra Deep Field", main: true },
                 { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/800px-The_Earth_seen_from_Apollo_17.jpg", caption: "Earth from Apollo 17" },
-                { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Culinary_fruits_front_view.jpg/800px-Culinary_fruits_front_view.jpg", caption: "Solar Nebula (simulated)" },
+                { src: "https://images.immediate.co.uk/production/volatile/sites/7/2018/02/Earth-from-space-1-64e9a7c.jpg?quality=90&resize=980,654", caption: "Solar Nebula (simulated)" },
                 { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/800px-NGC_4414_%28NASA-med%29.jpg", caption: "NGC 4414 Galaxy" },
               ].map((img, i) => (
                 <motion.div

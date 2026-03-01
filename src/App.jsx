@@ -14,6 +14,7 @@ import SolarSystem from './Components/Solar-system'
 import FutureTech from './Components/Pages/Section1'
 import FunFactsSection from './Components/SpaceAgencies'
 import SpaceTimeline from './Components/Spacetimline'
+import Programs from './Components/Programs'
 
 /* ── Pages ── */
 
@@ -52,6 +53,7 @@ function AppLayout() {
         <Route path="/gallery"  element={<GalleryPage/>}  />
         <Route path="/explore"  element={<ExploreSection/>}  />
         <Route path="/planets"  element={<PlanetsSection/>}  />
+        <Route path="/Programs"  element={<Programs/>}  />
       </Routes>
       <SpaceFooter />
     </div>
