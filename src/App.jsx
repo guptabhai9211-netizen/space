@@ -13,6 +13,7 @@ import SpaceGalaxy from './Components/Pages/SpaceGlaxy'
 import SolarSystem from './Components/Solar-system'
 import FutureTech from './Components/Pages/Section1'
 import FunFactsSection from './Components/SpaceAgencies'
+import SpaceTimeline from './Components/Spacetimline'
 
 /* ── Pages ── */
 
@@ -38,7 +39,7 @@ function AppLayout() {
       <Routes>
         <Route path="/"         element={ <>
     <HomePage/>
-    
+    <SpaceTimeline/>
     <SpaceGalaxy/>
     <SolarSystem/>
     <FutureTech/>
