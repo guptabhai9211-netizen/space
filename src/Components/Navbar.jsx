@@ -103,7 +103,7 @@ export default function SpaceNavbar() {
         .glow-bar {
           position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
           background: linear-gradient(90deg,transparent,#7c3aed,#4f46e5,#db2777,#7c3aed,transparent);
-          animation: glow-slide 4s linear infinite; background-size: 200% 100%;
+          animation: glow-slide 1s linear infinite; background-size: 200% 100%;
         }
         @keyframes glow-slide { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
 
@@ -115,7 +115,7 @@ export default function SpaceNavbar() {
 
         /* Logo */
         .logo {
-          font-family: 'Orbitron', monospace; font-weight: 800; font-size: 1.2rem;
+          font-family: 'Orbitron', monospace; font-weight: 800; font-size: 0.9rem;
           letter-spacing: 0.15em; color: #e9d5ff; text-decoration: none;
           display: flex; align-items: center; gap: 10px;
           text-shadow: 0 0 20px rgba(167,139,250,0.6),0 0 40px rgba(109,40,217,0.3);
@@ -123,7 +123,7 @@ export default function SpaceNavbar() {
         }
         .logo:hover {
           text-shadow: 0 0 30px rgba(167,139,250,0.9),0 0 60px rgba(109,40,217,0.5);
-          transform: translateZ(4px);
+          transform:none;
         }
         .logo-icon {
           font-size: 1.4rem; display: inline-block;
@@ -131,9 +131,13 @@ export default function SpaceNavbar() {
           filter: drop-shadow(0 0 8px rgba(167,139,250,0.8));
         }
         @keyframes rocket-pulse {
-          0%,100% { transform: translateY(0) rotate(-45deg); }
-          50%     { transform: translateY(-3px) rotate(-45deg); }
-        }
+  0%,100% { 
+    transform: translateY(0);
+  }
+  50% { 
+    transform: translateY(-3px);
+  }
+}
         .logo-accent { color: #a78bfa; position: relative; }
         .logo-accent::after {
           content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 1px;
@@ -301,8 +305,8 @@ export default function SpaceNavbar() {
 
             {/* Logo */}
             <Link to="/" className="logo" onClick={() => setOpen(false)}>
-              <span className="logo-icon">🚀</span>
-              <span>SPACE<span className="logo-accent">SITE</span></span>
+              <span><img src="space1.jpeg" className="logo-icon w-8" alt="Space Organisation authority" /></span>
+              <span>SPACE<span className="logo-accent"> Organisations </span><span>Authority</span></span>
             </Link>
 
             {/* Desktop links */}

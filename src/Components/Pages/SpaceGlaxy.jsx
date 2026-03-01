@@ -596,7 +596,7 @@ export default function SpaceGalaxy() {
               <div className="sg-eyebrow-dot" />
               DEEP SPACE OBSERVATORY
             </div>
-            <h1 className="sg-h1">Galaksi</h1>
+            <h1 className="sg-h1">Galaxy</h1>
             <p className="sg-h1-sub">Penjelajahan Kosmik · Space Exploration</p>
             <div className="sg-divider" />
           </motion.div>
@@ -688,9 +688,7 @@ export default function SpaceGalaxy() {
           pointerEvents: "none", zIndex: 5,
         }} />
 
-        {/* Footer credit */}
-        <div className="sg-credit">© 2026 · GALAKSI OBSERVATORY · BEYOND THE STARS</div>
-
+       
       </div>
     </>
   );
