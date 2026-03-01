@@ -187,7 +187,7 @@ export default function FunFactsSection() {
       teaser: "One star holds almost everything.",
       reveal: "The Sun contains 99.86% of the entire Solar System's mass. All the planets, moons, asteroids, and comets combined account for just 0.14%.",
       accentColor: "#FFD166",
-      bgVideo: "spaace4.mp4",
+      bgVideo: "space2.mp4",
       delay: 0,
     },
     {
@@ -196,7 +196,7 @@ export default function FunFactsSection() {
       teaser: "No one can hear you scream — literally.",
       reveal: "Space is an almost perfect vacuum. With no medium for sound waves to travel through, the universe is profoundly silent — no explosion, no rocket, nothing.",
       accentColor: "#8B5CF6",
-      bgVideo: "space2.mp4",
+      bgVideo: "space3.mp4",
       delay: 0.1,
     },
     {
@@ -205,7 +205,7 @@ export default function FunFactsSection() {
       teaser: "It could swallow all the others.",
       reveal: "Jupiter is so massive that all the other planets in the Solar System could fit inside it — with room to spare. Over 1,300 Earths fit within its volume.",
       accentColor: "#EF476F",
-      bgVideo: "space3.mp4",
+      bgVideo: "spaace4.mp4",
       delay: 0.2,
     },
   ];
