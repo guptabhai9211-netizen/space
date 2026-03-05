@@ -305,7 +305,7 @@ export default function SpaceNavbar() {
 
             {/* Logo */}
             <Link to="/" className="logo" onClick={() => setOpen(false)}>
-              <span><img src="space1.jpeg" className="logo-icon w-8" alt="Space Organisation authority" /></span>
+              <span><img src="space7.png" className="logo-icon w-12" alt="Space Organisation authority" /></span>
               <span>SPACE<span className="logo-accent"> Organisations </span><span>Authority</span></span>
             </Link>
 
